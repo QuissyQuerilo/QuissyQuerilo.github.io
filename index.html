@@ -1,7 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <link rel="stylesheet" media="screen" type="text/css" href="css/purple/colorpicker.css" />
+ <link rel="stylesheet" type="text/css" href="css/purple/kcstyle.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcmenu.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcforum.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcadmin.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcprofile.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcevents.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcstatus.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kcdialog.css" /> 
+ <link rel="stylesheet" type="text/css" href="css/purple/kccalendar.css" /> 
+ <link rel="shortcut icon" href="pv-favicon.ico" />    
+ <title>Quissy Makes a Mess</title>
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with poo Pages.</p>
-</body>
-</html>
+<div id=documentTop></div>
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/colorpicker.js"></script>
+<script type="text/javascript" src="js/kcnotices.js"></script>
+<script type="text/javascript" src="js/kcdialog.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/utility.js"></script>
+<script>
+var loginName = "";
+</script>
+
+<div id=noticeBox class=noticeBox></div>
+<div class=statusBar>
+<span class=statusLine id=statusLine></span>
+</div>
+<div id=heading class="heading">
+<table><tr><td style="padding: 15px;">
+<img src='img/ookoookok.jpg' style='cursor:pointer;' onclick='window.location="index.php";'>
+</td><td>
+<div id=pageTitle class=headingTitle>Quissy Home Page</div>
+<!-- BEGIN - Main Button Box -->
+<ul class="menu">
+  <li><a href='directory.php' onmouseover="menuOpen('people')" onmouseout="menuDelayedClose()">People</a>
+    <div id="people" onmouseover="menuCancelClose()" onmouseout="menuDelayedClose()">
+      <a href='directory.php'>Directory</a>
+      <a href='list-1op10.php'>Top Ten</a>
+      <a href='list-legends.php'>Legends</a>
+      <a href='list-online.php'>In Pink Velvet Now</a>
+    </div>
+  </li>
+  <li><a href='calendar.php' onmouseover="menuOpen('events')" onmouseout="menuDelayedClose()">Events</a>
+    <div id="events" onmouseover="menuCancelClose()" onmouseout="menuDelayedClose()">
+      <a href='calendar.php'>Calendar</a>
+      <a href='events.php'>Event List</a>
+    </div>
+  </li>
+  <li><a href='forum-list.php'>Forums</a></li>
+  <li><a href='login.php' class='loginName'>Login</a></li>
+</ul>
+<!-- END - Main Button Box -->
+<p>
+</td></tr></table>
+</div>
+<div id=errorMessageBar></div>
+
+<noscript>
+<center style="font-size:30; color: red;">
+Javascript must be enabled for this site to function properly.
+</center>
+</noscript>
+
+
+<script type="text/javascript" src="js/kchighlight.js"></script>
+
+<center>
+<div style="opacity:0.4;z-index:-999;">
+<img src="img/PVlogo.png" width=1000 hight=1000>
+</div>
+</center>
+
+<script>
+$(function() { playHighlights(); });
+</script>
+
+<div style='padding-top: 20px; '>
+<div style='color: white; float: left; '>Copyright 2014 by Pink Velvet Club</div><div style='color: white; float: right; '>Web design by Kelly Shergood</div><div style='color: white; '><center>Optimized for Chrome, Firefox and IE 11</center></div></div>
+<div class=endBuffer></div>
